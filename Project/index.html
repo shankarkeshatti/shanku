@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simple Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  <link rel = "stylesheet" type = "text/css" href = "C:\Users\shankar\Desktop\Project\css.css" /> 
+
+</head>
+ 
+<body>
+<div class="container">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">MoviesMasti</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#Movies">Movies</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#news">News</a></li>
+		<li><a href="#Entertainment">Entertainment</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<br/>
+
+<div class="container">
+	<div id="grad1">
+		<div class="scroll-left"><p style="color:white">Here, You can Check the News Updates, New Movies, Sports Channels and have good Entainment Channels.....!!!!! </p></div>
+	</div>
+</div>
+<br/>
+<div class="container">    
+  <div class="row content">
+  
+    <div class="col-sm-2">
+      	<img src="C:\Users\shankar\Desktop\Project\img\sudeep.jpg" style="width:165px;height:450px;">
+    </div>
+	
+    <div class="col-sm-8"> 
+	  <div class="slideshow-container">	 	  
+		<div class="mySlides fade"> 
+			<div class="numbertext">1 / 7</div>
+			<img src="C:\Users\shankar\Desktop\Project\img\sudeep3.jpg" style="width:750px;height:450px">
+			<div class="text">Abhinaya Chkravarti Kichha Sudeep.</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 7</div>
+			<img src="C:\Users\shankar\Desktop\Project\img\darshan.jpg" style="width:750px;height:450px">
+			<div class="text">Challenging Star Darshan.</div>
+		</div>
+		<div class="mySlides fade">	
+			<div class="numbertext">3 / 7</div>
+			<img src="C:\Users\shankar\Desktop\Project\img\vishnudada.jpg" style="width:750px;height:450px">
+			<div class="text">Sahas Simha Vishnu Dada.</div>
+		</div>
+		<div class="mySlides fade"> 
+			<div class="numbertext">4 / 7</div>
+			<img src="C:\Users\shankar\Desktop\Project\img\puneet.jpg" style="width:750px;height:450px">
+			<div class="text">Power Star PuneetRajKumar.</div>
+		</div>
+		<div class="mySlides fade">
+		<div class="numbertext">5 / 7</div>
+			<img src="C:\Users\shankar\Desktop\Project\img\sudeep4.jpg" style="width:750px;height:450px">
+			<div class="text">Abhinaya Chkravarti Kichha Sudeep.</div>
+		</div>
+		<div class="mySlides fade">	
+			<div class="numbertext">6 / 7</div>
+			<img src="C:\Users\shankar\Desktop\Project\img\ganesh.jpg" style="width:750px;height:450px">
+			<div class="text">Golden Star Ganesh.</div>
+		</div>
+		<div class="mySlides fade">	
+			<div class="numbertext">7 / 7</div>
+			<img src="C:\Users\shankar\Desktop\Project\img\yash.jpg" style="width:750px;height:450px">
+			<div class="text">Rocking Star yash.</div>
+		</div>
+	  </div>
+		<br>
+		<div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+		</div>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+		function showSlides() 
+		{
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) 
+			{
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length)
+			{
+				slideIndex = 1
+			}    
+			for (i = 0; i < dots.length; i++)
+			{
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
+	</div>
+	
+     <div class="col-sm-2">
+      	<img src="C:\Users\shankar\Desktop\Project\img\sudeep1.jpg" style="width:165px;height:450px;">
+    </div>
+  </div>
+</div>
+  <br/>
+  
+<div class="container">
+	<div class="well well-sm">
+	<div class="row">	
+		<div class="col-sm-6" id="Movies" style="text-align:left;">
+			<p style="font-size:25px;font-family:italic;color:blue;font-weight:bold">Movies</p>
+		</div>
+		<div class="col-sm-6" style="text-align:right;">
+		 <input type="text">
+			<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</button>
+		</div>
+	</div>  		
+  </div>
+</div>
+<br><br>
+<div class="container">    
+  <div class="row">
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/VX1rcjfqMzc" style="width:360px;height:200px;"></iframe>
+	</div>   
+    <div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/Ho0QidvN9vU" style="width:360px;height:200px;"></iframe>
+	</div> 
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/uB1PkwAEgEQ" style="width:360px;height:200px;"></iframe>
+	</div>  
+   	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/psqnQe8SUhc" style="width:360px;height:200px;"></iframe>
+	</div>    
+    <div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/8glEFKDmzxg" style="width:360px;height:200px;"></iframe>
+	</div> 
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/r71ruFbFAJw" style="width:360px;height:200px;"></iframe>
+	</div>  
+  </div>
+</div>
+<br/>
+<br/>
+<div class="container">
+	<div class="well well-sm">
+	<div class="row">	
+		<div class="col-sm-6" id="sports" style="text-align:left;">
+			<p style="font-size:25px;font-family:italic;color:blue;font-weight:bold">Sports</p>
+		</div>
+		<div class="col-sm-6" style="text-align:right;">
+		 <input type="text">
+			<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</button>
+		</div>
+	</div>  		
+  </div>
+</div>
+<br><br>
+<div class="container">    
+  <div class="row"> 
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/_lGMA-xgtLE" style="width:360px;height:200px;"></iframe>
+	</div>    
+    <div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/8Uo5anLJDJY"  style="width:360px;height:200px;"></iframe>
+	</div> 
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/zW87tVnDKIU" style="width:360px;height:200px;"></iframe>
+	</div>  	
+   	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/JKS8XsQXK0g"  style="width:360px;height:200px;"></iframe>
+	</div>    
+    <div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/lTQjySkKmRA" style="width:360px;height:200px;"></iframe>
+	</div> 
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/XBcIXejG5Ew"  style="width:360px;height:200px;"></iframe>
+	</div>  
+  </div>
+</div>
+<br/>
+<br/>
+<div class="container">
+	<div class="well well-sm">
+	<div class="row">	
+		<div class="col-sm-6" id="news" style="text-align:left;">
+			<p style="font-size:25px;font-family:italic;color:blue;font-weight:bold">News</p>
+		</div>
+		<div class="col-sm-6" style="text-align:right;">
+		 <input type="text">
+			<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</button>
+		</div>
+	</div>  		
+  </div>
+</div>
+<br><br>
+<div class="container">    
+  <div class="row"> 
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/wfDSivif3FI"style="width:360px;height:200px;"></iframe>
+	</div>    
+    <div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/_4KQA4y8dYg"  style="width:360px;height:200px;"></iframe>
+	</div> 
+	<div class="col-sm-4">
+		<iframe  src="https://www.youtube.com/embed/B3FxHLf_aZs"  style="width:360px;height:200px;"></iframe>
+	</div>  	
+   	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/QIn9FExX9ks" style="width:360px;height:200px;"></iframe>
+	</div>    
+    <div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/0Epz8Ns3kyU" style="width:360px;height:200px;"></iframe>
+	</div> 
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/S4r3loKEfkw" style="width:360px;height:200px;"></iframe>
+	</div>  
+  </div>
+</div>
+<br/>
+<br/>
+<div class="container">
+	<div class="well well-sm">
+	<div class="row">	
+		<div class="col-sm-6" id="Entertainment" style="text-align:left;">
+			<p style="font-size:25px;font-family:italic;color:blue;font-weight:bold">Entertainment</p>
+		</div>
+		<div class="col-sm-6" style="text-align:right;">
+		 <input type="text">
+			<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</button>
+		</div>
+	</div>  		
+  </div>
+</div>
+<br><br>
+<div class="container">    
+  <div class="row">
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/m-zbIfF-RYA" style="width:360px;height:200px;"></iframe>
+	</div>    
+    <div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/xugtczh7H7o" style="width:360px;height:200px;"></iframe>
+	</div> 
+	<div class="col-sm-4">
+		<iframe  src="https://www.youtube.com/embed/1ZW820852ws" style="width:360px;height:200px;"></iframe>
+	</div>  	
+   	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/EW0Yi3vIkp4"  style="width:360px;height:200px;"></iframe>
+	</div>    
+    <div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/uM-jUXh4RAY"  style="width:360px;height:200px;"></iframe>
+	</div> 
+	<div class="col-sm-4">
+		<iframe src="https://www.youtube.com/embed/HnsB91ZUgio"  style="width:360px;height:200px;"></iframe>
+	</div>  
+  </div>
+</div>
+<br/>
+<br/>
+<div class="container" id="login">
+	<div class="col-sm-6">
+		<div class="well well-sm">
+			<p style="text-align:center;font-size:25px;font-family:italic;color:blue;font-weight:bold"> LogIn Here.</p>
+		</div>				
+				 <div class="form-group">
+                  <label for="exampleInputName">Enter Email</label>
+                  <input type="text" class="form-control" id="InputEmail" placeholder="Enter Email">
+                </div>               
+				<div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                </div>               
+				<div class="col-sm-6" style="padding-top:15px">
+					<button type="button" class="btn btn-info">Login</button>
+					<button type="button" class="btn btn-danger">Cancel</button>
+				</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="well well-sm">
+			<p style="text-align:center;font-size:25px;font-family:italic;color:blue;font-weight:bold"> Register an Account</p></div>
+				
+				 <div class="form-group">
+                  <label for="exampleInputName">First name</label>
+                  <input type="text" class="form-control" id="InputfName" placeholder="Enter first name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputLastName">Last name</label>
+                  <input type="text" class="form-control" id="InputLastName" placeholder="Enter last name">
+                </div>
+				 <div class="form-group">
+                  <label for="exampleInputLastName">Gender</label>
+                  <div class="radio">
+					<label><input type="radio" name="optradio">Male</label><label style="padding-left:50px;"><input type="radio" name="optradio">Female</label>
+				  </div>				  
+                </div>
+				<div class="form-group">
+                  <label for="exampleInputLastName">Mobile Number</label>
+                  <input type="text" class="form-control" id="InputMobileno" placeholder="Enter Mobile No">
+                </div>			
+				<div class="form-group">
+				  <label for="exampleInputEmail1">Email address</label>
+				  <input type="email" class="form-control" id="InputEmail1"  placeholder="Enter email">
+				</div>			
+				<div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleConfirmPassword">Confirm password</label>
+                  <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm password">
+                </div>
+				<div class="form-group" style="padding-top:15px">
+					<button type="button" class="btn btn-info">Register!</button>
+					<button type="button" class="btn btn-danger">Clear</button>
+				</div>
+	</div>
+</div>
+	<br/>
+	
+           
+<div class="container">
+	<footer class="container-fluid text-center">
+		<p>Copy Right@ Simple Project </p>
+	</footer>
+</div>
+</body>
+</html>
